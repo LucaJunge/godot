@@ -13,6 +13,7 @@ if "GLES3_GLSL" in env["BUILDERS"]:
     env.Depends([f + ".gen.h" for f in glsl_files], gl_include_files + ["#gles3_builders.py"])
 
     env.GLES3_GLSL("canvas.glsl")
+    env.GLES3_GLSL("feed.glsl")
     env.GLES3_GLSL("copy.glsl")
     env.GLES3_GLSL("scene.glsl")
     env.GLES3_GLSL("sky.glsl")

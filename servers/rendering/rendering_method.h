@@ -145,6 +145,7 @@ public:
 	virtual float environment_get_ambient_light_energy(RID p_env) const = 0;
 	virtual float environment_get_ambient_sky_contribution(RID p_env) const = 0;
 	virtual RS::EnvironmentReflectionSource environment_get_reflection_source(RID p_env) const = 0;
+	virtual void environment_set_camera_feed_id(RID p_env, int p_camera_feed_id) = 0;
 
 	// Tonemap
 	virtual void environment_set_tonemap(RID p_env, RS::EnvironmentToneMapper p_tone_mapper, float p_exposure, float p_white) = 0;
